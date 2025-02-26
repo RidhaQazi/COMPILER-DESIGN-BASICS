@@ -18,8 +18,8 @@ The program takes an input C source file (e.g., sample.c) and analyzes its conte
 
 I tested the program using a sample input file (sample.c), which contained a simple C program. The lexical analyzer correctly identified and categorized the tokens, producing output like (Keyword): int, (Identifier): sum, (Operator): +=, and so on.
 
-## See sample.c file
-
 During development, I handled cases such as underscore-prefixed identifiers (_var), multi-character operators, and non-alphanumeric symbols. One challenge was ensuring that operators were correctly recognized, especially when combining symbols (e.g., differentiating between + and +=). To address this, I implemented lookahead techniques using ungetc() etc, allowing the program to inspect the next character before making a decision. This lexical analyzer is a crucial step in compiler design, as it forms the foundation for more complex analysis like syntax and semantic analysis. It has applications in compilers, interpreters, and code analysis tools, where source code needs to be parsed and understood. This task enhanced my understanding of tokenization, string processing, and file handling in C, and laid the groundwork for exploring parsing, symbol tables, and code generation, which are essential components of compiler construction.
 
 ## Output
+
+![Image](https://github.com/user-attachments/assets/7449cdad-b78e-410c-9d08-58d43554d03b)
